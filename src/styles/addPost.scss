@@ -1,0 +1,62 @@
+/* addPost.scss */
+
+/* Parent container styling */
+
+
+/* .add-post-container styling */
+.add-post-container {
+  margin: 20px;
+  background: #c5c6c7;
+  padding: 20px; /* Increased padding for a more spacious layout */
+  border-radius: 12px; /* Slightly larger border radius for a softer edge */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 2px solid #e0e0e0; /* Light border for a defined boundary */
+}
+
+/* Text area styling */
+.text-area {
+  width: 100%;
+  padding: 12px; /* Increased padding for a more comfortable typing experience */
+  border-radius: 6px; /* Softer border radius */
+  border: 1px solid #ddd; /* Lighter border for a more modern appearance */
+  font-size: 1.5rem; /* Increased font size for better readability */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  transition: border-color 0.5s ease; /* Smooth transition for border color change */
+  background-color: #66FCF1;
+  
+  &:focus {
+    border-color: #0077b6; /* Highlight border color on focus */
+    outline: none; /* Remove default outline */
+  }
+}
+
+.container {
+  display: flex;
+  background-color: #c5c6c7;
+  justify-content: flex-end; /* Aligns items to the right */
+}
+
+/* Button styling */
+.button {
+  margin-top: 15px; /* Increased margin for better spacing */
+  padding: 12px 24px; /* Larger padding for a more prominent button */
+  background-color: #1F2833; /* Primary color for a modern look */
+  color: #fff;
+  border: none;
+  border-radius: 6px; /* Softer border radius */
+  cursor: pointer;
+  font-size: 1rem; /* Larger font size for readability */
+  font-weight: 500; /* Slightly bolder font for emphasis */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  
+  
+  &:hover {
+    background-color: #005f73; /* Darker shade for hover effect */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  &:active {
+    background-color: #004a5e; /* Even darker shade for active state */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Slightly darker shadow on click */
+  }
+}

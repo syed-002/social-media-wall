@@ -1,0 +1,64 @@
+/* chatFunctionality.scss */
+
+/* Wrapper for chat functionality */
+.ChatFunctionalityWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  background-color: #c5c6c7; /* Light background for a modern feel */
+  border-radius: 12px; /* Softer border radius */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Container for chat messages */
+.ChatMessages {
+  flex: 1;
+  padding: 20px; /* Increased padding for better spacing */
+  background-color: #fff; /* White background for clarity */
+  color: #333; /* Dark text color for contrast */
+  border-top: 1px solid #e0e0e0; /* Light border for separation */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-y: auto; /* Ensure scrolling for overflow */
+}
+
+/* Individual message styles */
+.Message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  max-width: 80%;
+  padding: 12px; /* Slightly increased padding for a more comfortable size */
+  border-radius: 20px; /* Softer, larger border radius for modern look */
+  background-color: #e0e0e0; /* Light background for messages */
+  color: #333; /* Dark text color */
+  align-self: flex-start;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+  /* Styles for messages sent by the user */
+  &.isMine {
+    background-color: #0077b6; /* Brand color for user messages */
+    color: white; /* White text color for better readability */
+    align-self: flex-end;
+    box-shadow: none; /* Remove shadow for a flat look */
+  }
+}
+
+/* Input field for new messages */
+.MessageInput {
+  width: 100%;
+  padding: 12px; /* Increased padding for a comfortable size */
+  border-radius: 0 0 12px 12px; /* Softer border radius for bottom corners */
+  border: 1px solid #ddd; /* Light border for input field */
+  outline: none;
+  font-size: 1rem; /* Standard font size */
+  color: #333; /* Dark text color */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  background-color: #fff; /* White background for clarity */
+
+  &:focus {
+    border-color: #0077b6; /* Highlight border color on focus */
+  }
+}

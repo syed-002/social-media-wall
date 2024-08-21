@@ -1,0 +1,58 @@
+.friend-search {
+  flex: 1; /* Ensure the container takes up remaining space */
+  background-color: #c5c6c7; /* Light background for a modern feel */
+  color: #333; /* Dark text color for contrast */
+  padding: 20px; /* Increased padding for a spacious layout */
+  border-radius: 12px; /* Softer border radius */
+  box-sizing: border-box; /* Ensure padding doesn’t affect height */
+  overflow-y: auto; /* Enable scrolling */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* White background for search bar */
+    border-radius: 6px; /* Softer border radius */
+    padding: 10px;
+    margin-bottom: 15px; /* Space below the search bar */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Full width of its parent container */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+
+    .search-icon {
+      color: #0077b6; /* Color for the search icon */
+      margin-right: 10px; /* Space between icon and input */
+      font-size: 1.2rem; /* Increase icon size for better visibility */
+    }
+
+    .search-input {
+      display: flex;
+      flex: 1; /* Allow input to grow and fill remaining space */
+      min-width: 0; /* Prevents input from shrinking */
+      padding: 10px; /* Increased padding for better usability */
+      border-radius: 6px; /* Softer border radius */
+      border: 1px solid #ddd; /* Light border for input */
+      font-size: 1rem; /* Standard font size */
+      color: #333; /* Text color */
+      box-sizing: border-box; /* Ensure padding is included in the width */
+      outline: none; /* Remove default outline */
+
+      &:focus {
+        border-color: #45A29E; /* Highlight border color on focus */
+      }
+    }
+  }
+
+  .friend-list {
+    .friend-item {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0077b6;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+/* Container for individual posts */
+.post-container {
+  margin: 20px;
+  padding: 20px; /* Increased padding for a more spacious layout */
+  background-color: #C5C6C7; /* Clean white background for a modern feel */
+  border-radius: 12px; /* Softer border radius for a polished look */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: relative;
+  border: 2px solid #e0e0e0; /* Light border to define boundaries */
+}
+
+/* Content within the post */
+.post-content {
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  font-size: 1.5rem; /* Standard font size for readability */
+  color: #000; /* Darker text color for better contrast */
+}
+
+/* Container for post actions (like, comment, share) */
+.post-actions {
+  display: flex;
+  gap: 15px; /* Increased gap for better separation */
+  align-items: center;
+  font-size: 1.3rem; /* Slightly smaller font size for action buttons */
+  color: #0077b6; /* Action color */
+  
+  .action-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    
+    &:hover {
+      color: #005f73; /* Darker shade on hover */
+    }
+  }
+}
+
+/* Section for comments */
+.comment-section {
+  background-color: c5c6c7;
+  margin-top: 15px; /* Increased margin for spacing */
+}
+
+/* Input for adding comments */
+.comment-input {
+  background-color: #1F2833;
+  color: white;
+  width: calc(100% - 20px);
+  padding: 12px; /* Increased padding for better typing comfort */
+  margin-top: 10px;
+  border-radius: 6px; /* Softer border radius */
+  border: 1px solid #ddd; /* Light border for a modern look */
+  font-size: 1.3rem; /* Standard font size */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  
+  &:focus {
+    border-color: #0077b6; /* Highlight border color on focus */
+    outline: none; /* Remove default outline */
+  }
+}
+
+/* Container for comment list */
+.comment-list {
+  margin-top: 10px;
+}
+
+/* Individual comment item */
+.comment-item {
+  padding: 10px 0; /* Increased padding for better readability */
+  border-bottom: 1px solid #ddd; /* Light border for separation */
+  font-size: 1.3rem; /* Slightly smaller font size for comments */
+  color: #333; /* Consistent text color */
+}
+
+/* Button for deleting a post */
+.delete-button {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 15px; /* Adjusted for better placement */
+  right: 15px;
+  cursor: pointer;
+  color: #e74c3c; /* Red color for delete action */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+  
+  &:hover {
+    color: #c0392b; /* Darker red on hover */
+  }
+}
