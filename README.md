@@ -1,5 +1,7 @@
 # Social Media Wall
 
+A social media wall using ReactJS
+
 ## Setup Instructions
 
 ### Prerequisites
